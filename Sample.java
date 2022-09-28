@@ -24,8 +24,46 @@ import java.util.Scanner;
 // }
 
 // Teachers class
-class Teachers {
-  public int num;
+// class Teachers {
+//   public int num;
+// }
+
+// Newclass class
+// class NewClass {
+//   private int num; // NewClassの外からアクセスできない
+//   public void setNum(int x) {
+//     num = x;
+//     System.out.println(num);
+//   }
+// }
+
+
+// SetterGetter class
+// class SetterGetter {
+//   private int num;
+//   public void setNum(int x) {
+//     num = x;
+//   }
+//   public int getNum() {
+//     return num;
+//   }
+// }
+
+
+// New_Class class 
+// class New_Class {
+//   private int num;
+//   public void setNum(int x) {
+//     if(x > 0 && x < 100) {
+//       num = x;
+//     } else {
+//       System.out.println("0~100の間で入力してください");
+//       System.exit(0);
+//     }
+//   }
+//   public int getNum() {
+//     return num;
+//   }
 }
 
 public class Sample {
@@ -318,21 +356,49 @@ public class Sample {
 
 
     // Teachers class
-    Teachers Kate = new Teachers();
-    Kate.num = 15;
-    show(Kate);
-    System.out.println(Kate.num);
+    // Teachers Kate = new Teachers();
+    // Kate.num = 15;
+    // show(Kate);
+    // System.out.println(Kate.num);
 
 
 
     // カプセル化
-    あ
+    // アクセス指定子（４種類）
+    // デフォルト：同一パッケージ内のみ
+    // public：すべてのクラスからアクセス可能
+    // private：そのクラス内だけ（メンバ関数）
+    // protected：デフォルト＋継承先のクラス
+    // クラス修飾子のアクセス指定子
+    // デフォルト、public
+
+    // アクセス指定子 private クラスの中からのみアクセス可能
+    // NewClass class
+    // NewClass Obj = new NewClass();
+    // Obj.setNum(10);
+    
+
+    // "getter/setter" メンバ関数を読み書きする関数に対して特別につけられた名前
+    // SetterGetter class
+    // SetterGetter Obj = new SetterGetter();
+    // Obj.setNum(10);
+    // System.out.println(Obj.getNum());
+
+
+    // New_Class class
+    // New_Class Obj = new New_Class();
+    // // Obj.setNum(150);
+    // Obj.setNum(50);
+    // System.out.println(Obj.getNum());
+
+    // 
 
   }
 
   // Teachers class
-  public static void show(Teachers x) {
-    System.out.println(x.num);
-    x.num = 20;
-  }
+  // public static void show(Teachers x) {
+  //   System.out.println(x.num);
+  //   x.num = 20;
+  // }
+
 }
